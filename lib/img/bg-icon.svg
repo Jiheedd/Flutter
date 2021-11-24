@@ -1,0 +1,37 @@
+<svg id="Group_9" data-name="Group 9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="812" viewBox="0 0 400 812">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="400" height="812" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.169" x2="0.5" y2="1.375" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3595c8"/>
+      <stop offset="0.976" stop-color="#5622e9"/>
+      <stop offset="1" stop-color="#6b3413" stop-opacity="0.388"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.169" x2="0.5" y2="1.375" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2abcbc"/>
+      <stop offset="0.976" stop-color="#5622e9"/>
+      <stop offset="1" stop-color="#6b3413" stop-opacity="0.388"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2eadc0"/>
+      <stop offset="1" stop-color="#465ad9"/>
+      <stop offset="1" stop-color="#531432"/>
+    </linearGradient>
+  </defs>
+  <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(0 510)" fill="#fff" stroke="#707070" stroke-width="1">
+    <rect width="400" height="302" stroke="none"/>
+    <rect x="0.5" y="0.5" width="399" height="301" fill="none"/>
+  </g>
+  <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="451" cy="406" rx="451" ry="406" transform="translate(-33)" opacity="0.62" fill="url(#linear-gradient)"/>
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="450" cy="449.202" rx="450" ry="449.202" transform="translate(-97 -169.076)" fill="url(#linear-gradient-2)"/>
+  </g>
+  <g id="Group_10" data-name="Group 10">
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(17 719)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient-3)">
+      <circle cx="27.5" cy="27.5" r="27.5" stroke="none"/>
+      <circle cx="27.5" cy="27.5" r="27" fill="none"/>
+    </g>
+    <path id="Icon_awesome-user-plus" data-name="Icon awesome-user-plus" d="M31.2,12H28V8.31a.871.871,0,0,0-.8-.923H25.6a.871.871,0,0,0-.8.923V12H21.6a.871.871,0,0,0-.8.923v1.847a.871.871,0,0,0,.8.923h3.2v3.693a.871.871,0,0,0,.8.923h1.6a.871.871,0,0,0,.8-.923V15.7h3.2a.871.871,0,0,0,.8-.923V12.926A.871.871,0,0,0,31.2,12Zm-20,2.77c3.535,0,6.4-3.307,6.4-7.386S14.735,0,11.2,0,4.8,3.307,4.8,7.386,7.665,14.773,11.2,14.773Zm4.48,1.847h-.835a7.656,7.656,0,0,1-7.29,0H6.72C3.01,16.619,0,20.093,0,24.375v2.4a2.606,2.606,0,0,0,2.4,2.77H20a2.606,2.606,0,0,0,2.4-2.77v-2.4C22.4,20.093,19.39,16.619,15.68,16.619Z" transform="translate(32 729.58)" fill="#fffefe"/>
+  </g>
+</svg>
