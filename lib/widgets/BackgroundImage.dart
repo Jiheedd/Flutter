@@ -2,14 +2,20 @@ import 'package:flutter/material.dart';
 
 
 class BackgroundImage extends StatelessWidget {
+  const BackgroundImage({
+    Key? key,
+    required this.image,
+  }) : super(key: key);
+
+  final String image;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('lib/img/bg-1.png'),
-          fit : BoxFit.fill
+            image: AssetImage(image),
+            fit : BoxFit.fill
         ),
       ),
     );
