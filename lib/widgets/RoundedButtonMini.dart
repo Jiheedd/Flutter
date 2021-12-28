@@ -8,10 +8,12 @@ class RoundedButtonMini extends StatelessWidget {
   const RoundedButtonMini({
     Key? key,
     required this.buttonText,
+    required this.routeName,
 
   }) : super(key: key);
 
   final String buttonText;
+  final String routeName;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,9 @@ class RoundedButtonMini extends StatelessWidget {
           borderRadius: BorderRadius.circular(16)
       ),
       child: FlatButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, routeName);
+        },
         child: Text(
             buttonText,
             style: TextStyle(

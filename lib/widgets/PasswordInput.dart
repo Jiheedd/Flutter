@@ -17,7 +17,7 @@ class passwordInput extends StatelessWidget {
   final IconData icon;
   final String hint;
   final TextInputAction inputAction;
-  bool showedPass = true;
+  bool showPass = true;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,14 @@ class passwordInput extends StatelessWidget {
           color: Colors.black12,
           borderRadius: BorderRadius.circular(16),
         ),
-        child: TextField(
+        child: TextFormField(
+          validator: (value){
+            if (value!.isEmpty)
+              return "Password can't be empty";
+            return null;
+          },
+
+          obscureText: showPass,
           decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(vertical: 20),
               border: InputBorder.none,
@@ -47,11 +54,11 @@ class passwordInput extends StatelessWidget {
               iconSize: 15,
               color: Colors.white.withOpacity(0.5),
               onPressed: () {
-                showedPass = !showedPass;
+                showPass = !showPass;
               },
             ),
           ),
-          obscureText: true,
+
           style: kBodyText,
           textInputAction: inputAction,
         ),

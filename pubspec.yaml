@@ -33,13 +33,25 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-
+  http: ^0.12.1
+  logger: ^0.9.1
   font_awesome_flutter: ^8.10.0
   google_fonts: ^1.1.1
+  flutter_facebook_login: ^3.0.0
+  flutter_secure_storage: ^3.3.3
+  image_picker: ^0.6.7+4
+  json_annotation:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.9.2
+  build_runner:
+  json_serializable:
+
+
+flutter_icons:
+  image_path: "assets/logo.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -68,6 +80,13 @@ flutter:
     - lib/img/car.png
     - lib/img/focus.png
     - lib/img/bgFind.png
+    - lib/img/notfound.png
+    - lib/img/bg-addcar.png
+    - lib/img/tn.png
+    - lib/img/car-icon.png
+    - lib/img/bg-carfound.png
+    - lib/img/success-btn.png
+    - lib/img/notFoundIcon.png
 
   # assets:
   #   - images/a_dot_burr.jpeg

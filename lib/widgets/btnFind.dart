@@ -5,13 +5,16 @@ import 'package:flutter/material.dart';
 import '../palatte.dart';
 
 class btnFind extends StatelessWidget {
+
   const btnFind({
     Key? key,
     required this.buttonText,
+    required this.routeName
 
   }) : super(key: key);
 
   final String buttonText;
+  final String routeName;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +27,9 @@ class btnFind extends StatelessWidget {
           borderRadius: BorderRadius.circular(16)
       ),
       child: FlatButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context,routeName);
+        },
         child: Text(
           buttonText,
           style: TextStyle(

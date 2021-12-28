@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../palatte.dart';
-import '../widgets/BackgroundFind.dart';
+import '../widgets/BackgroundImage.dart';
 import 'package:flutter/material.dart';
 import '../widgets/widgets.dart';
 
@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        BackgroundFind(),
+        BackgroundImage(image: 'lib/img/bgFind.png',),
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SafeArea(
@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
                         ),
                         Column(
                           children: <Widget> [
-                            btnFind(buttonText: "FIND"),
+                            btnFind(buttonText: "FIND",routeName:'/notFound'),
                           ],
                         ),
                       ],

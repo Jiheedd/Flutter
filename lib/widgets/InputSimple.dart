@@ -45,6 +45,7 @@ class InputSimple extends StatelessWidget {
                 borderSide: BorderSide(color: Colors.white, width: 5.0),
               ),
               hintText: hint,
+              enabled: true,
               hintStyle: TextStyle(
                 fontSize: 13,
                 color: Colors.white70,

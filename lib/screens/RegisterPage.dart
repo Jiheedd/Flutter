@@ -1,3 +1,4 @@
+import 'package:crush_car/widgets/imageProfil.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../widgets/PasswordInputMini.dart';
@@ -22,7 +23,7 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        BackgroundImage(),
+        BackgroundImage(image: 'lib/img/bg-1.png',),
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SafeArea(
@@ -31,9 +32,10 @@ class RegisterPage extends StatelessWidget {
                 children: [
                   Container(
                     //padding: const EdgeInsets.symmetric(horizontal: 10),
-                    height: 150,
+                    width: 115,
+                    height: 140,
                     child: Center(
-                        child: UserIconMini()
+                        child: imageProfile(),
                     ),
                   ),
                   Container(
@@ -92,7 +94,7 @@ class RegisterPage extends StatelessWidget {
                         ),
                         Column(
                           children: <Widget> [
-                            RoundedButtonMini(buttonText: "SAVE"),
+                            RoundedButtonMini(buttonText: "SAVE",routeName: '/addCar',),
                           ],
                         ),
                       ],

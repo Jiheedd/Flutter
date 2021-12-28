@@ -1,4 +1,7 @@
+import 'package:crush_car/screens/AddCarPage.dart';
 import 'package:crush_car/screens/HomePage.dart';
+import 'package:crush_car/screens/NotFoundPage.dart';
+import 'package:crush_car/screens/SuccessFind.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,11 +19,14 @@ class myApp extends StatelessWidget {
     return MaterialApp(
       title: 'Crush Car',
 
-      home: const LoginPage(),
+      home: LoginPage(),
       routes: {
-        '/login': (BuildContext context) => const LoginPage(),
+        '/login': (BuildContext context) => LoginPage(),
         '/register': (BuildContext context) => const RegisterPage(),
         '/home': (BuildContext context) => const HomePage(),
+        '/notFound': (BuildContext context) => const NotFoundPage(),
+        '/addCar': (BuildContext context) => const AddCar(),
+        '/success': (BuildContext context) => const SuccessFind(),
       },
     );
   }

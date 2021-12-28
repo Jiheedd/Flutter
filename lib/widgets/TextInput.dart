@@ -33,8 +33,18 @@ class textInput extends StatelessWidget {
           color: Colors.black12,
           borderRadius: BorderRadius.circular(16),
         ),
-        child: TextField(
+        child: TextFormField(
+
+          validator: (value) {
+            if (value!.isEmpty)
+              return "Email can't be empty";
+            if (!value.contains("@"))
+              return "Email is Invalid";
+            return null;
+          },
           decoration: InputDecoration(
+              /*helperText: "Email have not be empty",
+              helperStyle: TextStyle(fontSize: 8, color: Colors.red),*/
               contentPadding: const EdgeInsets.symmetric(vertical: 20),
               border: InputBorder.none,
               hintText: hint,
