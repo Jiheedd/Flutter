@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    margin: EdgeInsets.only(top:35,left: 10),
+                    margin: EdgeInsets.only(top:150,left: 10),
                     child: Column(
                       children: [
                         Row(
@@ -73,6 +73,44 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+                  ),
+                  Row(
+                    children: [
+
+                      Container(
+                        margin: const EdgeInsets.only(left: 100),
+                        child: IconButton(
+                          icon: Icon(FontAwesomeIcons.solidUser),
+                          color: Colors.white70,
+                          iconSize: 35,
+                          onPressed: (){
+                            Navigator.pushNamed(context, '/listUser');
+                          },
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(left: 40),
+                        child: IconButton(
+                          icon: Icon(FontAwesomeIcons.carAlt),
+                          color: Colors.white70,
+                          iconSize: 35,
+                          onPressed: (){
+                            Navigator.pushNamed(context, '/listCar');
+                          },
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(left: 40),
+                        child: IconButton(
+                          icon: Icon(FontAwesomeIcons.userShield),
+                          color: Colors.white70,
+                          iconSize: 35,
+                          onPressed: (){
+                            Navigator.pushNamed(context, '/listAdmin');
+                          },
+                        ),
+                      ),
+                    ],
                   ),
                   Container(
                     margin: const EdgeInsets.only(right: 250,top: 96),

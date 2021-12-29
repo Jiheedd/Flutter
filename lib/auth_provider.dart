@@ -3,14 +3,15 @@ import 'package:logger/logger.dart';
 import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+//import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class NetworkHandler {
-  String baseurl = "http://localhost:3000/api";
+  String baseurl = "https://my-json-server.typicode.com/Jiheedd/Flutter";
   var log = Logger();
 
   get storage => null;
 
+  /*
   Future get(String url) async {
     String token = await storage.read(key: "token");
     url = formater(url);
@@ -28,6 +29,9 @@ class NetworkHandler {
     log.i(response.statusCode);
   }
 
+   */
+
+  /*
   Future<http.Response> post(String url, Map<String, String> body) async {
     String token = await storage.read(key: "token");
     url = formater(url);
@@ -46,4 +50,6 @@ class NetworkHandler {
   String formater (String url){
     return baseurl + url;
   }
+
+   */
 }

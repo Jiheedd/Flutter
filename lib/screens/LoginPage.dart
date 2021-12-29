@@ -3,14 +3,14 @@ import 'dart:convert';
 import 'package:crush_car/auth_provider.dart';
 import 'package:crush_car/screens/HomePage.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+//import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../widgets/PasswordInput.dart';
 import '../widgets/TextInput.dart';
 import '../widgets/RoundedButton.dart';
 
 
-import 'package:flutter/services.dart';
+//import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../palatte.dart';
@@ -32,12 +32,12 @@ class _LoginPageState extends State<LoginPage>{
   bool showPass = true;
   final _globalKey = GlobalKey<FormState>();
   NetworkHandler networkHandler = NetworkHandler();
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
-  late String errorText;
-  bool validate = false;
-  bool circular = false;
-  final storage = new FlutterSecureStorage();
+  //TextEditingController _emailController = TextEditingController();
+  //TextEditingController _passwordController = TextEditingController();
+  //late String errorText;
+  //bool validate = false;
+ // bool circular = false;
+  //final storage = new FlutterSecureStorage();
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -82,7 +82,7 @@ class _LoginPageState extends State<LoginPage>{
                                     borderRadius: BorderRadius.circular(16),
                                   ),
                                   child: TextFormField(
-                                    controller: _passwordController,
+                                    //controller: _passwordController,
                                     obscureText: showPass,
                                     validator: (value) {
                                       if (value!.isEmpty)
@@ -147,8 +147,10 @@ class _LoginPageState extends State<LoginPage>{
                                   child: FlatButton(
                                     onPressed: () async {
                                       setState(() {
-                                        circular = true;
+                                        //circular = true;
                                       });
+                                      Navigator.pushNamed(context, '/home');
+                                      /*
                                       //Login Logic start here
                                       Map<String, String> data = {
                                         "username": _emailController.text,
@@ -161,10 +163,10 @@ class _LoginPageState extends State<LoginPage>{
                                           response.statusCode == 201) {
                                         Map<String, dynamic> output = json.decode(response.body);
                                         print(output["token"]);
-                                        await storage.write(key: "token", value: output["token"]);
+                                        //await storage.write(key: "token", value: output["token"]);
                                         setState(() {
                                           validate = true;
-                                          circular = false;
+                                          //circular = false;
                                         });
                                         Navigator.pushAndRemoveUntil(
                                             context,
@@ -173,14 +175,14 @@ class _LoginPageState extends State<LoginPage>{
                                             ),
                                                 (route) => false);
                                       } else {
-                                        String output = json.decode(response.body);
+                                        //String output = json.decode(response.body);
                                         setState(() {
                                           validate = false;
-                                          errorText = output;
-                                          circular = false;
+                                          //errorText = output;
+                                          //circular = false;
                                         });
                                       }
-
+                                      */
                                       // login logic End here
                                     },
                                     child: Text(

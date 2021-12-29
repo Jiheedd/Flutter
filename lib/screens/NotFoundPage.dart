@@ -31,7 +31,7 @@ class NotFoundPage extends StatelessWidget {
                     //padding: const EdgeInsets.symmetric(horizontal: 10),
                     width: 180,
                     height: 180,
-                    margin: EdgeInsets.only(top: 45,bottom: 8, left: 45),
+                    margin: EdgeInsets.only(top: 175,bottom: 8, left: 50),
                     child: Center(
                       child: Image.asset('lib/img/notFoundIcon.png'),
                     ),
@@ -39,7 +39,7 @@ class NotFoundPage extends StatelessWidget {
 
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    margin: EdgeInsets.only(top:0,left: 35),
+                    margin: EdgeInsets.only(top:0,left: 65),
                     child: Column(
                       children: [
                         SizedBox(
@@ -78,9 +78,9 @@ class NotFoundPage extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(right: 204,top: 138),
                     child: IconButton(
-                      icon: Icon(FontAwesomeIcons.exclamation),
-                      color: Colors.red.withOpacity(0),
-                      iconSize: 18,
+                      icon: Icon(FontAwesomeIcons.addressCard),
+                      color: Colors.black,
+                      iconSize: 55,
                       onPressed: (){
                         Navigator.pushNamed(context, '/success');
                       },

@@ -1,5 +1,8 @@
 import 'package:crush_car/screens/AddCarPage.dart';
 import 'package:crush_car/screens/HomePage.dart';
+import 'package:crush_car/screens/ListOfAdmins.dart';
+import 'package:crush_car/screens/ListOfCars.dart';
+import 'package:crush_car/screens/ListOfUsers.dart';
 import 'package:crush_car/screens/NotFoundPage.dart';
 import 'package:crush_car/screens/SuccessFind.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +30,9 @@ class myApp extends StatelessWidget {
         '/notFound': (BuildContext context) => const NotFoundPage(),
         '/addCar': (BuildContext context) => const AddCar(),
         '/success': (BuildContext context) => const SuccessFind(),
+        '/listUser': (BuildContext context) => const ListOfUsers(),
+        '/listAdmin': (BuildContext context) => const ListOfAdmins(),
+        '/listCar': (BuildContext context) => const ListOfCars(),
       },
     );
   }

@@ -1,6 +1,6 @@
 class AppUrl {
 
-  static const String baseUrl = 'http://localhost:3000/api';
+  static const String baseUrl = 'https://my-json-server.typicode.com/Jiheedd/Flutter';
 
   static const String users = baseUrl + '/users';
 

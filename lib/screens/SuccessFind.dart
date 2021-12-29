@@ -208,7 +208,7 @@ class SuccessFind extends StatelessWidget {
                       color: Colors.white,
                       iconSize: 24,
                       onPressed: (){
-                        Navigator.pushNamed(context, '/register');
+                        Navigator.pushNamed(context, '/listUser');
                       },
                     ),
                   ),
