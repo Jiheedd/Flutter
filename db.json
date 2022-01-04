@@ -54,34 +54,5 @@
       "image": "https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/235867775_324375019466105_5129638166844994806_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=jkeT-YtNxsAAX_HMoKg&_nc_ht=scontent.ftun16-1.fna&oh=00_AT-9bxBd8WTWIP_TCP8sRCfZQEhm8gBkBdc7arjlvJj29A&oe=61CFC873",
       "email":"chaima@","pasword":"chaima000","tel":26585200}
   ],
-  "agrafe": [
-{
-    "id":"1",
-    "label":"MOULURE PANEAU DE PORTES - PANNEAU LATERAL",
-    "description":"PARTNER / BERLINGO",
-    "price":"0.700",
-    "category":"Français",
-    "pic":""},
-{
-    "id":"2",
-    "label":"REVÊTEMENT INTERIEUR",
-    "description":"Opel, Corsa, Kadett, Tigra, Citroen, Peugeot",
-    "price":"0.650",
-    "category":"Français",
-    "pic":""},
-{
-    "id":"3",
-    "label":"HABILLAGE INTERIEUR",
-    "description":"RENAULT / LAND ROVER",
-    "price":"0.650",
-    "category":"Français",
-    "pic":""},
-{
-    "id":"4",
-    "label":"MOULURE PANNEAU",
-    "description":"RENAULT TRAFIC / IVECO DAILY",
-    "price":"0.450",
-    "category":"Français",
-    "pic":""},
-  ],
+
 }
